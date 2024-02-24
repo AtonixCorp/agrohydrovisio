@@ -1,6 +1,21 @@
+/* Header.css */
 .header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100px; /* adjust as needed */
+  justify-content: space-between;
+  background-color: black;
 }
+
+.logo {
+  height: 100px; /* Adjust as needed */
+  width: 100px; /* Adjust as needed */
+  float: left; /* This will align the logo to the left */
+}
+
+
+.header h1 {
+  color: white;
+  margin: 0;
+  padding: 20px;
+  align-items: left;
+}
+

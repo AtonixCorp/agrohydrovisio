@@ -1,10 +1,12 @@
 import React from 'react';
+import './Header.css';
 import NavBar from './NavBar';
 
-function Header() {
+const Header = () => {
   return (
-    <header>
-      <h1>My Website</h1>
+    <header className="header">
+      <img src="logo.png" alt="Logo" className="logo" />
+      <h1>Robby</h1>
       <NavBar />
     </header>
   );

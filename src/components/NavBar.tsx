@@ -1,16 +1,24 @@
+// Path: frontend/robby/src/components/NavBar.css
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
-const NavBar: React.FC = () => {
+const Navbar = () => {
   return (
-    <nav className="NavBar">
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/doc">Doc</Link>
-      <Link to="/blog">Blog</Link>
+    <nav className="navbar">
+      <ul className="nav-links">
+        <li>
+          <Link to="/doc">Documentation</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
     </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;
