@@ -1,12 +1,17 @@
 import React from 'react';
+import Header from '../components/Header';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
+import './HomePage.css';
 
-const HomePage: React.FC = () => {
+const Homepage: React.FC = () => {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of our application.</p>
+    <div className="home-container">
+      <Header className="home-header" />
+      <Main className="home-main" />
+      <Footer className="home-footer" />
     </div>
   );
 };
 
-export default HomePage;
+export default Homepage;

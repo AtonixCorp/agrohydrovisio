@@ -1,0 +1,32 @@
+css .home-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.home-main {
+  background-color: #f8f8f8;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.home-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: auto;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-container > * {
+  flex-shrink: 0;
+}
+
+.home-container > .main-content {
+  flex-grow: 1;
+}

@@ -1,21 +1,31 @@
-/* Header.css */
-.header {
+header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
 }
 
 .logo {
-  height: 100px; /* Adjust as needed */
-  width: 100px; /* Adjust as needed */
-  float: left; /* This will align the logo to the left */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-
-.header h1 {
-  color: white;
+h1 {
   margin: 0;
-  padding: 20px;
-  align-items: left;
+  font-size: 1.5rem;
+  color: wheat;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}

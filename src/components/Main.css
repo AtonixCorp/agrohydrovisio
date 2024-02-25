@@ -1,0 +1,15 @@
+css
+main {
+  padding: 10px;
+}
+
+main h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
