@@ -1,5 +1,4 @@
-css
-main {
+css main {
   padding: 10px;
 }
 
@@ -7,6 +6,7 @@ main h1 {
   font-size: 2rem;
   color: #333;
 }
+
 
 p {
   font-size: 1rem;

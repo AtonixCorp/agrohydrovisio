@@ -1,8 +1,6 @@
 import React from 'react';
 import './Main.css';
 
-
-
 interface MainProps {
   className?: string;
 }

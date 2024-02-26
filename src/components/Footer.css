@@ -3,12 +3,12 @@ footer {
   padding: 10px;
   background-color: #f8f9fa;
   color: #212529;
-  
+
   width: 100%;
   bottom: 0;
   text-align: center;
 }
 
 p {
-  margin: 0;
+  margin: 10px;
 }
