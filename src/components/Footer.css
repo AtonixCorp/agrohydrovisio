@@ -1,14 +1,27 @@
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #f8f9fa;
-  color: #212529;
-
-  width: 100%;
-  bottom: 0;
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-p {
-  margin: 10px;
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.social-media-icon:hover {
+  background-color: #777;
 }

@@ -1,0 +1,20 @@
+.Section-c {
+  /* Your container styles */
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #666;
+  /* Add more styles as needed */
+}

@@ -1,15 +1,31 @@
-css main {
+/* Main Styles */
+.main-container {
+  /* Set your desired styles for the main container */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 10px;
-}
-
-main h1 {
-  font-size: 2rem;
+  background-color: #f8f8f8;
   color: #333;
+  font-family: Arial, sans-serif;
 }
 
-
-p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 10px;
+.sectionA {
+  /* Set your desired styles for the section */
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926');
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
+
+section-content {
+  /* Set your desired styles for the section content */
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Add more styles for your specific content within the main container */

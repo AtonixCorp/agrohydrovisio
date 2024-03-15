@@ -1,25 +1,30 @@
-css .navbar {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
+/* Navbar.css */
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff; /* Set your desired background color */
+  color: #333;
+  padding: 5px;
 }
 
-.nav-links {
+.navbar-list {
   list-style: none;
+  margin: 0;
+  padding: 10px 0;
   display: flex;
+  justify-content: flex-end;
 }
 
-.nav-links li {
-  margin-right: 20px;
+.navbar-list li {
+  margin-right: 10px; /* Adjust spacing between navigation items */
 }
 
-.nav-links a {
-  color: wheat;
+.navbar-list li a {
+  color: #fff; /* Set the text color for navigation links */
   text-decoration: none;
 }
 
-.nav-links a:hover {
-  color: #ffd700;
+.navbar-list li a:hover {
+  text-decoration: underline;
+  color: #00ffff; /* Set the hover color for navigation links */
 }
