@@ -1,3 +1,4 @@
+require('dotenv').config();
 import React from 'react';
 import './App.css';
 import Homepage from './pages/HomePage';

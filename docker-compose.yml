@@ -1,0 +1,52 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./bcend
+      dockerfile: Dockerfile
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./bcend:/app
+    environment:
+      - NODE_ENV=production
+
+    depends_on:
+      - mongodb
+    networks:
+      - backend
+
+  frontend:
+    build:
+      context: ./react/app
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+    volumes:
+      - type: bind
+        source: ./react/app
+        target: /usr/src/app
+    depends_on:
+      - backend
+    networks:
+      - backend
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_container
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ofidotechblog
+      MONGO_INITDB_ROOT_PASSWORD: FRTAGl6ofidotechblog
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - backend
+
+volumes:
+  mongodb_data:
+
+networks:
+  backend:
+    driver: bridge
