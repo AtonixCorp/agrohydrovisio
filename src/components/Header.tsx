@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           </Link>
         </div>
         <div className="title">
-          <h1 className="title">Ofido Community</h1> {/* Fixed here */}
+          <h1 className="title">OFIDO TECH BLOG</h1> {/* Fixed here */}
         </div>
         <SearchBar />
 

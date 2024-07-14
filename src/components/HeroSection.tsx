@@ -6,7 +6,7 @@ import './HeroSection.css';
 const HeroSection: React.FC = () => {
   return (
     <section className="hero-section">
-      <h1 className="hero-title">Welcome to Ofido Community!</h1>
+      <h1 className="hero-title">WELCOME OFIDO TECH SOLUTIONS BLOG</h1>
       <p className="hero-description">
         Ofido Community is an inclusive online platform that unites young people
         from diverse backgrounds, fostering engaging conversations and
