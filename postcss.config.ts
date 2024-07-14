@@ -5,4 +5,4 @@ module.exports = {
     'postcss-import': {}, // Add the postcss-import plugin
     'postcss-nested': {}, // Add the postcss-nested plugin
   },
-}
+};
