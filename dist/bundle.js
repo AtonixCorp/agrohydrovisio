@@ -31585,17 +31585,17 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const react_1 = __importDefault(__webpack_require__(6540));
 const client_1 = __importDefault(__webpack_require__(5338));
 const react_2 = __webpack_require__(253);
-__webpack_require__(6378); // Bootstrap CSS
+__webpack_require__(6378);
 __webpack_require__(2216);
 const App_1 = __importDefault(__webpack_require__(8577));
 const reportWebVitals_1 = __importDefault(__webpack_require__(821));
-// Component rendering for testing
+// Test
 test('renders learn react link', () => {
     (0, react_2.render)(react_1.default.createElement(App_1.default, null));
     const linkElement = react_2.screen.getByText(/learn react/i);
     expect(linkElement).toBeInTheDocument();
 });
-// Application rendering
+// rendering
 const root = client_1.default.createRoot(document.getElementById('root'));
 root.render(react_1.default.createElement(react_1.default.StrictMode, null,
     react_1.default.createElement(App_1.default, null)));
