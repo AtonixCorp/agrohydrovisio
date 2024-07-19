@@ -39,4 +39,32 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 3000,
+  },
+  performance: {
+    maxAssetSize: 1000000,
+    maxEntrypointSize: 1000000,
+  },
+
+  devtool: 'source-map',
+
+  mode: 'development',
+
+  optimization: {
+    minimize: false,
+  },
+
+  target: 'web',
+
+  node: {
+    global: true,
+    __filename: 'mock',
+    __dirname: 'mock',
+  },
+
+
 };
