@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - '27018:27017'
+
+  socialmediadashboard:
+    build: .
+    image: socialapp
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongodb
+    environment:
+      PORT: 3000
+      SECRET_KEY: 'your_secret_key'

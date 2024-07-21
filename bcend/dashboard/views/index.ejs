@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= page.title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+    <%- include('partials/header') %> 
+    <!-- Content placeholder -->
+    <%= content %> 
+
+    <%- include('partials/footer') %> 
+
+    <script>
+        function logout() {
+      
+            window.location.href = '/logout';
+        }
+    </script>
+    <button id="registerBtn" class="button-link" onclick="window.location.href='/register'">Register</button>
+    <button id="loginBtn" class="button-link" onclick="window.location.href='/login'">Login</button>
+    <button id="logoutBtn" class="button-link" onclick="logout()">Logout</button>
+</body>
+</html>

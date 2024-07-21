@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create and Manage Posts</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="/post.css">
+</head>
+
+<body>
+  <header>
+    <button id="logoutBtn" onclick="logout()">Logout</button>
+  </header>
+
+  <h1>Create and Manage Posts</h1>
+
+  <div class="post-form">
+    <label for="text">Create a new post:</label>
+    <textarea id="text" name="text" rows="4" required></textarea>
+    <button onclick="createPost()">Create Post</button>
+  </div>
+
+  <div class="post-list" id="postList"></div>
+
+  <div class="pagination" id="pagination"></div>
+
+</body>
+
+</html>
