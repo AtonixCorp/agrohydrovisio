@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./react/app
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+    volumes:
+      - type: bind
+        source: ./react/app
+        target: /usr/src/app
+    depends_on:
+      - backend
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
