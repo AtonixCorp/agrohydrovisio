@@ -11,7 +11,7 @@ function Footer() {
         textAlign: 'center',
       }}
     >
-      <p style={{ margin: '0', color: '#333', fontSize: '16px' }}>
+      <p style={{ margin: '0', color: '#333', fontSize: '20px' }}>
         © 2024 OfidoHub Technology Research
       </p>
     </footer>
