@@ -6,12 +6,12 @@ function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: '#00415a',
+        backgroundColor: '#ffffff',
         padding: '20px',
         textAlign: 'center',
       }}
     >
-      <p style={{ margin: '0', color: '#ffffff', fontSize: '16px' }}>
+      <p style={{ margin: '0', color: '#333', fontSize: '16px' }}>
         © 2024 OfidoHub Technology Research
       </p>
     </footer>
