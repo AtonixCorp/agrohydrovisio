@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faX } from '@fortawesome/free-brands-svg-icons'
-
-// Removed faTimes as it's not used
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Header() {
   const [showContactInfo, setShowContactInfo] = useState(false)
@@ -31,14 +29,7 @@ function Header() {
         >
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
-        <a
-          href="https://x.com/ofidohub"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ margin: '0 10px', color: '#000' }}
-        >
-          <FontAwesomeIcon icon={faX} size="2x" />
-        </a>
+        {/* Removed the link and icon for faX */}
       </div>
       <nav>
         <ul>
