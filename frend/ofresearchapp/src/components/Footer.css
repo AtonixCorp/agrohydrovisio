@@ -1,0 +1,11 @@
+/* Footer.css */
+footer {
+  background-color: #00415a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
