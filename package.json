@@ -38,14 +38,14 @@
     "yup": "^1.4.0"
   },
   "scripts": {
-   "build": "webpack --mode production",
-  "start": "react-scripts start",
-  "start:dev": "webpack serve --mode development",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-  "dev": "react-scripts start",
-  "lint": "eslint src --ext .js,.jsx,.ts,.tsx"
+    "build": "webpack --mode production",
+    "start": "react-scripts start",
+    "start:dev": "webpack serve --mode development",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "dev": "react-scripts start",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx"
   },
   "eslintConfig": {
     "extends": [
@@ -87,6 +87,7 @@
     "react-scripts": "^5.0.1",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.10",
+    "thread-loader": "^4.0.2",
     "ts-loader": "^9.5.1",
     "webpack": "^5.93.0",
     "webpack-bundle-analyzer": "^4.10.2",
