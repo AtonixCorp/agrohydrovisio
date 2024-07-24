@@ -15,7 +15,6 @@ function App() {
         <Header />
         <div style={{ height: '2px', backgroundColor: 'black' }}></div>
         <Suspense fallback={<div>Loading...</div>}>
-          <LazyComponent />
           <MainContent />
         </Suspense>
         <div>
