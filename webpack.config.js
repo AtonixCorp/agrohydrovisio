@@ -28,13 +28,24 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
         exclude: /node_modules/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: '[name]__[local]___[hash:base64:5]',
+              },
+            },
+          },
+          'postcss-loader',
+        ],
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
         include: /node_modules/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
