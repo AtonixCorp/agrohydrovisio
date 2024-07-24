@@ -41,11 +41,11 @@ function MainContent() {
               textAlign: 'justify',
             }}
           >
-            We're passionate about pushing the boundaries of technology. Our
-            intensive research drives innovation, allowing us to create flexible
-            software solutions that cater to your unique needs. Whether you are
-            a startup, a growing business, or an established enterprise, our
-            developer teams are here to help you model success using
+            We&apos;re passionate about pushing the boundaries of technology.
+            Our intensive research drives innovation, allowing us to create
+            flexible software solutions that cater to your unique needs. Whether
+            you are a startup, a growing business, or an established enterprise,
+            our developer teams are here to help you model success using
             cutting-edge technologies.
           </p>
         </div>

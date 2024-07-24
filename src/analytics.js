@@ -5,6 +5,8 @@ export const sendToAnalytics = (metric) => {
   if (navigator.sendBeacon) {
     navigator.sendBeacon(url, body)
   } else {
-    fetch(url, { body, method: 'POST', keepalive: true })
+    fetch(url, { body, method: 'POST', keepalive: true }).catch((error) =>
+      console.error('Fetch error:', error),
+    )
   }
 }

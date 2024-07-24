@@ -1,4 +1,3 @@
-import { ReportHandler } from 'web-vitals'
 import { sendToAnalytics } from './analytics'
 
 const reportWebVitals = (onPerfEntry) => {
@@ -11,8 +10,9 @@ const reportWebVitals = (onPerfEntry) => {
         getLCP(onPerfEntry)
         getTTFB(onPerfEntry)
       })
-      .catch((err) => console.error(err))
-    console.error('Error importing web-vitals', error)
+      .catch((err) => {
+        console.error('Error importing web-vitals', err)
+      })
   }
 }
 
