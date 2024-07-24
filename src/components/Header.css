@@ -74,17 +74,17 @@ nav li a:hover {
 }
 
 .contact-toggle {
-  background-color: #00415a; 
-  color: white; 
+  background-color: #00415a;
+  color: white;
   padding: 10px 20px;
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  font-size: 16px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .contact-toggle:hover {
-  background-color: #0056b3; 
+  background-color: #0056b3;
 }
 
 .sign-in {

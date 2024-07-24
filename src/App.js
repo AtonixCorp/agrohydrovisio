@@ -1,11 +1,12 @@
+import React, { Suspense, lazy } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Home from './components/MainContent' // Imported as Home
-import MainContent from './components/MainContent'
+
+const MainContent = lazy(() => import('./components/MainContent'))
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       <Router>
         <Header />
         <div style={{ height: '2px', backgroundColor: 'black' }}></div>
-        <Home /> {/* Use Home instead of MainContent */}
+        <Suspense fallback={<div>Loading...</div>}>
+          <MainContent />
+        </Suspense>
         <div>
           <div style={{ height: '2px', backgroundColor: 'black' }}></div>
           <Footer />

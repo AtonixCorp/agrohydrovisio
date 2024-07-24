@@ -13,11 +13,11 @@ function MainContent() {
     <main>
       <div
         style={{
-          border: '2px solid #000', // Solid black border
-          padding: '20px', // Padding inside the box
-          margin: '20px', // Margin around the box
-          borderRadius: '10px', // Optional: rounded corners
-          boxShadow: '0 4px 8px rgba(0,0,0,0.1)', // Optional: shadow effect
+          border: '2px solid #000',
+          padding: '20px',
+          margin: '20px',
+          borderRadius: '10px',
+          boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
         }}
       >
         <div className="header-container">
@@ -43,8 +43,8 @@ function MainContent() {
           >
             We're passionate about pushing the boundaries of technology. Our
             intensive research drives innovation, allowing us to create flexible
-            software solutions that cater to your unique needs. Whether you’re a
-            startup, a growing business, or an established enterprise, our
+            software solutions that cater to your unique needs. Whether you are
+            a startup, a growing business, or an established enterprise, our
             developer teams are here to help you model success using
             cutting-edge technologies.
           </p>
@@ -56,24 +56,24 @@ function MainContent() {
       >
         <div
           style={{
-            border: '2px solid #000', // Solid black border
-            padding: '20px', // Padding inside the box
-            margin: '10px 0', // Margin around the box, more on top and bottom for separation
-            borderRadius: '5px', // Optional: rounded corners
-            boxShadow: '0 2px 4px rgba(0,0,0,0.1)', // Optional: shadow effect
-            textAlign: 'center', // Center-align the text
+            border: '2px solid #000',
+            padding: '20px',
+            margin: '10px 0',
+            borderRadius: '5px',
+            boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+            textAlign: 'center',
           }}
         >
           Project
         </div>
         <div
           style={{
-            border: '2px solid #000', // Solid black border
-            padding: '20px', // Padding inside the box
-            margin: '10px 0', // Margin around the box, more on top and bottom for separation
-            borderRadius: '5px', // Optional: rounded corners
-            boxShadow: '0 2px 4px rgba(0,0,0,0.1)', // Optional: shadow effect
-            textAlign: 'center', // Center-align the text
+            border: '2px solid #000',
+            padding: '20px',
+            margin: '10px 0',
+            borderRadius: '5px',
+            boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+            textAlign: 'center',
           }}
         >
           Developers
