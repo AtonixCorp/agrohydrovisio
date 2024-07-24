@@ -6,8 +6,6 @@ const Dotenv = require('dotenv-webpack')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const TerserPlugin = require('terser-webpack-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
   entry: './src/index.js',
@@ -59,7 +57,6 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new Dotenv(),
-    new BundleAnalyzerPlugin(),
   ],
   mode: 'production',
 }
