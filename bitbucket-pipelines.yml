@@ -1,0 +1,23 @@
+image: node:16
+
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Build and Test
+            caches:
+              - node
+            script:
+              - npm install
+              - npm test
+              - self.hosted
+              - linux
+        - step:
+            name: Code linting
+            caches:
+              - node
+            script:
+              - npm install eslint
+              - npx eslint .
+              - self.hosted
+              - linux
