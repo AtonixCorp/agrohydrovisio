@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
-import './Header.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import React, { useState } from 'react';
+import './Header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Header() {
-  const [showContactInfo, setShowContactInfo] = useState(false)
+  const [showContactInfo, setShowContactInfo] = useState(false);
 
   const toggleContactInfo = () => {
-    setShowContactInfo(!showContactInfo)
-  }
+    setShowContactInfo(!showContactInfo);
+  };
 
   return (
     <header>
@@ -56,7 +56,7 @@ function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

@@ -1,13 +1,13 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import './MainContent.css'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './MainContent.css';
 
 function MainContent() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const redirectToPostCreation = () => {
-    navigate('/create-post')
-  }
+    navigate('/create-post');
+  };
 
   return (
     <main>
@@ -100,7 +100,7 @@ function MainContent() {
         Create Post
       </button>
     </main>
-  )
+  );
 }
 
-export default MainContent
+export default MainContent;

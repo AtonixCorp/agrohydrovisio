@@ -1,6 +1,6 @@
 // components/Footer.js
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import './Footer.css';
 
 function Footer() {
   return (
@@ -15,7 +15,7 @@ function Footer() {
         © 2024 OfidoHub Technology Research
       </p>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
