@@ -1,11 +1,41 @@
-/* Footer.css */
-footer {
-  background-color: #ffffff;
-  color: #333;
-  text-align: center;
-  padding: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
   width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom ul li {
+  margin-left: 1rem;
+}
+
+.footer-bottom ul li a {
+  color: inherit;
+  text-decoration: none;
 }

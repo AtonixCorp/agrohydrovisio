@@ -1,82 +1,129 @@
-/* MainContent.css */
-
 .main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-/* Add to MainContent.css */
-.sidebar {
-  width: 250px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background-color: #00415a;
+  font-family: Arial, sans-serif;
   padding: 20px;
-  box-sizing: border-box;
 }
 
-.sidebar ul {
+.intro-section {
+  background-color: #f0f8ff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #ad4d8c;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.intro-section h1 {
+  font-size: 1rem;
+  color: #ad4d8c;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  transition-property: inherit;
+}
+.intro-section h2 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-decoration: solid underline #ad4d8c;
+  font-size: bold;
+}
+
+.intro-section p {
+  font-size: 1.25rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.topics-section {
+  background-color: #000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.topics-section h2 {
+  color: #ad4d8c;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-decoration: solid underline #ad4d8c;
+}
+
+.quantum-computing {
+  background-color: #000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.nav {
   list-style: none;
   padding: 0;
-}
-
-.sidebar ul li {
-  padding: 10px;
-  background-color: #ddd;
-  margin-bottom: 5px;
-  position: relative;
-}
-
-.sidebar ul li:hover > ul {
-  display: block;
-}
-
-.sidebar ul li ul {
-  display: none;
-  position: absolute;
-  left: 100%;
-  top: 0;
-  width: 200px;
-  background-color: #ccc;
-}
-
-.sidebar ul li ul li {
-  display: block;
-}
-.main-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 30px;
-}
-.app-names {
+  margin: 0;
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
 }
 
-.app-names div {
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: #00415a;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: bold;
+.quantum-computing h3 {
+  color: #0d9494;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  text-decoration: solid underline #ad4d8c;
 }
 
-.button-link {
-  margin-top: 30px;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  border: 2px solid #00415a;
-  border-radius: 8px;
-  background-color: #fff;
-  color: #0099ff;
-  cursor: pointer;
+.artificial-intelligence {
+  background-color: #fce4ec;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.hardware-computing {
+  background-color: #f3e5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.data-science {
+  background-color: #e8f5e9;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.web-development {
+  background-color: #fff3e0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cybersecurity {
+  background-color: #e1f5fe;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.community-section {
+  background-color: #fff0f5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.journey-section {
+  background-color: #ffffe0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+a {
+  color: #007bff;
   text-decoration: none;
-  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
 }
