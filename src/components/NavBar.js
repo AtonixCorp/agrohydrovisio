@@ -1,75 +1,86 @@
 import React from 'react';
+import './NavBar.css';
 
 const NavBar = () => {
   return (
-    <div className="container d-flex justify-content-center">
-      <ul className="nav">
-        <li className="nav-item dropdown">
-          <a
-            href="#"
-            className="nav-link px-2 dropdown-toggle"
-            id="computingDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Computing
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="computingDropdown">
-            <li>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item dropdown">
+            <a
+              href="#"
+              className="nav-link dropdown-toggle"
+              id="computingDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Computing
+            </a>
+            <div className="dropdown-menu" aria-labelledby="computingDropdown">
               <a className="dropdown-item" href="#">
                 Quantum Computing
               </a>
-            </li>
-            <li>
               <a className="dropdown-item" href="#">
                 Hardware Computing
               </a>
-            </li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link px-2">
-            Chemistry
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link px-2">
-            Physics
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link px-2">
-            Web Development
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link px-2">
-            Data Science
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link px-2">
-            IoT
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link px-2">
-            Communication
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link px-2">
-            Mathematics
-          </a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link px-2">
-            Science
-          </a>
-        </li>
-      </ul>
-    </div>
+            </div>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              Chemistry
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              Physics
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              Web Development
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              Data Science
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              IoT
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              Communication
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              Mathematics
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              Science
+            </a>
+          </li>
+        </ul>
+        <hr className="nav-bar divider" />
+      </div>
+    </nav>
   );
 };
 

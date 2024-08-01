@@ -9,7 +9,7 @@ const SignUp = () => {
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
-              <h1 className="card-title text-center">Register</h1>
+              <h1 className="card-title text-center">SignUp</h1>
               <form action="/register" method="post" className="auth-form">
                 <div className="form-group">
                   <label htmlFor="username">Username:</label>
@@ -42,7 +42,7 @@ const SignUp = () => {
                   />
                 </div>
                 <button type="submit" className="btn btn-primary btn-block">
-                  Register
+                  SignUp
                 </button>
               </form>
               <p className="mt-3 text-center">

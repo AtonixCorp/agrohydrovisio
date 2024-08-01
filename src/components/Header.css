@@ -1,5 +1,6 @@
 /* Header.css */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,26 +33,26 @@ body, html {
 
 @media (max-width: 768px) {
   .header {
-      flex-direction: column;
-      align-items: center; /* Center items in the column */
+    flex-direction: column;
+    align-items: center; /* Center items in the column */
   }
 
   .nav-list {
-      flex-direction: column;
-      align-items: center; /* Center items in the column */
+    flex-direction: column;
+    align-items: center; /* Center items in the column */
   }
 
   .nav-item {
-      margin: 5px 0;
+    margin: 5px 0;
   }
 
   .nav-item a {
-      text-decoration: none;
-      color: #000;
+    text-decoration: none;
+    color: #000;
   }
 
   .hydrovisio-text {
-      margin-left: 0;
+    margin-left: 0;
   }
 
   .social-links {

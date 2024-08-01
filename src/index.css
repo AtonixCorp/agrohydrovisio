@@ -2,30 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #131313; /* Dark background color */
-    color: #ffffff; /* Light text color for contrast */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #131313; /* Dark background color */
+  color: #ffffff; /* Light text color for contrast */
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0;
 }
 
 /* Additional styles for other elements if needed */
 a {
-    color: #1e90ff; /* Light blue color for links */
+  color: #1e90ff; /* Light blue color for links */
 }
 
 button {
-    background-color: #333333; /* Dark background for buttons */
-    color: #ffffff; /* Light text color for buttons */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: #333333; /* Dark background for buttons */
+  color: #ffffff; /* Light text color for buttons */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #555555; /* Slightly lighter background on hover */
+  background-color: #555555; /* Slightly lighter background on hover */
 }
