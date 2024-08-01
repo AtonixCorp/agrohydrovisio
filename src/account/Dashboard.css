@@ -1,0 +1,37 @@
+.dashboard {
+    width: 250px; /* Set a fixed width for the sidebar */
+    background-color: #f8f9fa; /* Light background for the sidebar */
+    border-right: 1px solid #dee2e6; /* Light border on the right */
+    min-height: 100vh; /* Full height of the viewport */
+    padding-top: 1rem; /* Spacing from the top */
+  }
+  
+  .nav-link {
+    color: #343a40; /* Dark text color for the links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-link:hover {
+    background-color: #e9ecef; /* Light hover background */
+  }
+  
+  .dropdown-toggle {
+    color: #343a40; /* Dark text color for the dropdown */
+  }
+  
+  .dropdown-menu {
+    margin-top: 0; /* Align dropdown with the button */
+  }
+  
+  .user-profile {
+    flex-grow: 1; /* Allow it to grow to fill available space */
+    padding: 1rem; /* Spacing for the user profile content */
+  }
+  
+  .user-profile h2 {
+    margin-bottom: 1rem; /* Space below the heading */
+  }
+  
+  .user-profile p {
+    color: #495057; /* Subtle text color for paragraphs */
+  }

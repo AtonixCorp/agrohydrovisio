@@ -1,8 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const SignUp = () => {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    setError('');
+
+    // Mock sign-up logic
+    const mockApiResponse = await mockSignUpApi(username, email, password);
+
+    if (mockApiResponse.success) {
+      // If sign-up is successful, navigate to Login
+      navigate('/login');
+    } else {
+      // Handle sign-up error
+      setError(mockApiResponse.message);
+    }
+  };
+
+  const mockSignUpApi = (username, email, password) => {
+    // Mock API response
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        if (username && email && password) {
+          resolve({ success: true });
+        } else {
+          resolve({ success: false, message: 'Invalid input' });
+        }
+      }, 1000);
+    });
+  };
+
   return (
     <div className="container mt-5">
       <div className="row justify-content-center">
@@ -10,7 +46,8 @@ const SignUp = () => {
           <div className="card">
             <div className="card-body">
               <h1 className="card-title text-center">SignUp</h1>
-              <form action="/register" method="post" className="auth-form">
+              {error && <div className="alert alert-danger">{error}</div>}
+              <form onSubmit={handleSignUp} className="auth-form">
                 <div className="form-group">
                   <label htmlFor="username">Username:</label>
                   <input
@@ -18,6 +55,8 @@ const SignUp = () => {
                     id="username"
                     name="username"
                     className="form-control"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                     required
                   />
                 </div>
@@ -28,6 +67,8 @@ const SignUp = () => {
                     id="email"
                     name="email"
                     className="form-control"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
@@ -38,6 +79,8 @@ const SignUp = () => {
                     id="password"
                     name="password"
                     className="form-control"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
                   />
                 </div>

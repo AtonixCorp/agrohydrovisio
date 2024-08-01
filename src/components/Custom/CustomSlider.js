@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './NavBar.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
@@ -7,16 +8,12 @@ import {
   faTwitter,
   faGitlab,
 } from '@fortawesome/free-brands-svg-icons';
-import './NavBar.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <nav
-      className="navbar navbar-expand-xxl navbar-dark bg-dark p-1 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 w-100"
+      className="navbar navbar-expand-xxl navbar-dark bg-dark p-1 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3"
       aria-label="Seventh navbar example"
     >
       <div className="container-fluid">
@@ -48,27 +45,71 @@ const NavBar = () => {
                 className="dropdown-menu"
                 aria-labelledby="dropdownMenuButton"
               >
-                {[
-                  'Computing',
-                  'Data Science',
-                  'Artificial Intelligence',
-                  'Physics',
-                  'Another action',
-                  'IoT',
-                  'Quantum Computing',
-                  'Hardware Computing',
-                  'Chemistry',
-                  'Web Development',
-                  'Communication',
-                  'Mathematics',
-                  'Science',
-                ].map((item) => (
-                  <li key={item}>
-                    <a className="dropdown-item" href="#">
-                      {item}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Computing
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Data Science
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Artificial Intelligence
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Physics
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    IoT
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Quantum Computing
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Hardware Computing
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Chemistry
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Web Development
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Communication
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Mathematics
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Science
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -77,19 +118,22 @@ const NavBar = () => {
             <li className="nav-item">
               <Link
                 to="/"
-                className="nav-link link-light px-2 active"
+                className="nav-link link-body-emphasis px-2 active"
                 aria-label="Home"
               >
-                Projects
+                Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/community" className="nav-link link-light px-2">
+              <Link
+                to="/community"
+                className="nav-link link-body-emphasis px-2"
+              >
                 Community
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/research" className="nav-link link-light px-2">
+              <Link to="/research" className="nav-link link-body-emphasis px-2">
                 Research
               </Link>
             </li>
@@ -145,5 +189,3 @@ const NavBar = () => {
     </nav>
   );
 };
-
-export default NavBar;

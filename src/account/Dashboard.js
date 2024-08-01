@@ -1,11 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './UserProfile.css';
+import './Dashboard.css';
 import NavItem from './NavItem';
 
-const UserProfile = () => {
+const Dashboard = () => {
   return (
-    <div className="user-profile">
+    <div className="dashboard">
       <ul className="nav flex-column">
         <NavItem title="Customers" iconHref="#people-circle" />
         {/* Add more NavItem components here if needed */}
@@ -18,7 +18,7 @@ const UserProfile = () => {
           aria-expanded="false"
         >
           <img
-            src="https://github.com/mdo.png"
+            src=""
             alt="User Avatar"
             width="24"
             height="24"
@@ -55,4 +55,4 @@ const UserProfile = () => {
   );
 };
 
-export default UserProfile;
+export default Dashboard;

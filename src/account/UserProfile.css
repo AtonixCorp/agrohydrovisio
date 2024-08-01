@@ -1,0 +1,29 @@
+.user-profile {
+  padding: 1rem; /* General padding for the profile */
+  background-color: #ffffff; /* White background for the profile area */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.user-profile h1 {
+  font-size: 2rem; /* Larger font size for headings */
+  color: #343a40; /* Dark heading color */
+}
+
+.user-profile p {
+  font-size: 1rem; /* Standard font size for text */
+  color: #495057; /* Subtle text color */
+}
+
+.nav-item {
+  margin-bottom: 0.5rem; /* Space between nav items */
+}
+
+.nav-link {
+  display: flex; /* Use flexbox for icon and text alignment */
+  align-items: center; /* Align items vertically center */
+}
+
+.nav-link svg {
+  margin-right: 0.5rem; /* Space between icon and text */
+}
