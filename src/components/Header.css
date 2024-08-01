@@ -1,49 +1,17 @@
-.container.d-flex.justify-content-center {
-  margin-top: 20px;
-  background-color: #0d9494;
-  padding: 20px 0;
-}
+/* Header.css */
 
 .nav-item {
   position: relative;
   margin: 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+
 }
 
-.nav-link.px-2.dropdown-toggle {
-  cursor: pointer;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #0d9494;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  min-width: 200px;
-  padding: 0;
-  margin: 0;
-}
-
-.dropdown-item {
-  color: #333;
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-item:hover {
-  background-color: #f1f1f1;
-}
-
-.nav-item.show .dropdown-menu {
-  display: block;
-}
 
 .logo {
   height: 40px;
-  margin-right: 20px;
+  margin-right: 1px;
 }
 
 .logo-container {
@@ -51,10 +19,10 @@
   align-items: center;
 }
 
-.ofidohubtechresearch-text {
+.hydrovisio-text {
   color: #0d9494;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 34px;
   margin-left: 10px;
   text-transform: uppercase;
   line-height: 1.5;
@@ -68,6 +36,7 @@
 .nav.flex-grow-1 {
   flex-grow: 1;
   justify-content: center;
+
 }
 
 .login-link {
@@ -86,40 +55,9 @@
   border-radius: 5px;
 }
 
-.menu {
-  background-color: #0d9494;
-  padding: 10px 0;
-  color: #fff;
-}
-
-.menu .nav {
-  display: flex;
-  justify-content: center;
-}
-
-.menu .nav-item {
-  margin: 0 10px;
-}
-
-.menu .nav-link {
-  color: #0d9494;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-.menu .nav-link:hover {
-  color: #ad4d8c;
-  font-weight: bold;
-}
-
-.menu .nav-link::first-letter {
-  font-size: 24px;
-  font-weight: bold;
-  color: #cc8899;
-}
-
-.pointer-icon {
-  margin-left: 5px;
-  cursor: pointer;
+.py-2 bg-body-tertiary border-bottom {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #000;
+  border-bottom: 1px solid #e1e4e8;
 }
