@@ -6,7 +6,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 const Header = () => {
   return (
     <>
-      <header className="py-2 bg-body-tertiary border-bottom">
+      <header className="header">
         <div className="container d-flex justify-content-between align-items-center">
           <div className="logo-container d-flex align-items-center">
             <img src="/ofidohubreslogo.png" alt="Logo" className="logo" />
