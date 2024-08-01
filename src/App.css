@@ -5,25 +5,25 @@
 }
 
 .main-content {
-  margin-left: 0px; /* Adjust for sidebar width */
+  margin-left: 0px; 
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
-  height: 50%;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 20%;
 }
 
 .part {
   padding: 20px;
-  overflow-y: auto; /* Ensure content is scrollable if it overflows */
+  overflow-y: auto; 
 }
 
 .part1 {
-  background-color: #f8f9fa; /* Light background */
+  background-color: #000;
 }
 
 .part2 {
-  background-color: #e9ecef; /* Slightly darker background */
+  background-color: #e9ecef;
 }
 
 .part3 {
-  background-color: #dee2e6; /* Even darker background */
+  background-color: #000;
 }
