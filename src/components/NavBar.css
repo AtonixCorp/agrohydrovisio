@@ -1,6 +1,5 @@
-
 :root {
-  --custom-dark-bg: #343a40; 
+  --custom-dark-bg: #343a40;
 }
 
 .navbar {
@@ -23,7 +22,6 @@
   margin: 0 10px;
   padding: 0 10px;
   text-transform: uppercase;
-  
 }
 
 .custom-nav-link {
