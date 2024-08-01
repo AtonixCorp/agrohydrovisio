@@ -154,22 +154,6 @@ const MainContent = () => {
             daily dose of tech headlines.
           </p>
         </section>
-
-        <section className="journey-section bg-white p-5 rounded shadow-sm">
-          <h2 className="mb-4">Your Journey Starts Here</h2>
-          <p>
-            Whether you’re a seasoned pro or a curious beginner,{' '}
-            <strong>[Your Software Name]</strong> is your tech compass. Buckle
-            up, explore, and let’s geek out together!
-          </p>
-          <p>
-            👉{' '}
-            <a href="#" className="btn btn-primary">
-              Start Exploring
-            </a>{' '}
-            👈
-          </p>
-        </section>
       </div>
     </main>
   );

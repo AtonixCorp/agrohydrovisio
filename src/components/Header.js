@@ -46,7 +46,7 @@ const Header = () => {
               href="https://github.com/ofidohub"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ margin: '0 10px', color: '#333' }}
+              style={{ margin: '0 5px', color: '#333' }}
             >
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>

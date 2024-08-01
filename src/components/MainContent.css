@@ -2,8 +2,7 @@
   font-family: Arial, sans-serif;
   padding: 20px;
   width: 100%;
-  margin: 0 ;
-  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -16,23 +15,13 @@
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-
-
-.intro-section h1 {
-  font-size: 1rem;
-  color: #ad4d8c;
-  margin-bottom: 10px;
-  text-decoration: underline;
-  text-transform: uppercase;
-  transition-property: inherit;
-}
 .intro-section h2 {
   font-size: 2rem;
   color: #343a40;
   margin-bottom: 10px;
   text-transform: uppercase;
   text-decoration: solid underline #ad4d8c;
-  font-size: bold;
+  font-weight: bold;
 }
 
 .intro-section p {
@@ -54,64 +43,20 @@
   text-decoration: solid underline #ad4d8c;
 }
 
-.quantum-computing {
-  background-color: #000;
-  padding: 20px;
-  margin-bottom: 20px;
+.topics-grid {
+  background-color: var(--bs-secondary-bg);
+  color: var(--bs-secondary-color);
 }
 
-.nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.quantum-computing h3 {
+.topics-grid h3 {
   color: #0d9494;
   margin-bottom: 20px;
   text-transform: uppercase;
   text-decoration: solid underline #ad4d8c;
 }
 
-.artificial-intelligence {
-  background-color: #fce4ec;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.hardware-computing {
-  background-color: #f3e5f5;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.data-science {
-  background-color: #e8f5e9;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.web-development {
-  background-color: #fff3e0;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.cybersecurity {
-  background-color: #e1f5fe;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
 .community-section {
   background-color: #fff0f5;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.journey-section {
-  background-color: #ffffe0;
   padding: 20px;
   margin-bottom: 20px;
 }
