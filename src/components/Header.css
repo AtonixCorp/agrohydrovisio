@@ -4,8 +4,9 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
 }
-
 
 .header {
   display: flex;
@@ -14,16 +15,14 @@ body, html {
   padding: 10px 20px;
   background-color: #f8f9fa;
   border-bottom: 1px solid #e1e4e8;
+  width: 100%;
 }
-
-
 
 .nav-item {
   position: relative;
   margin: 0 20px;
   text-transform: uppercase;
   font-weight: bold;
-
 }
 
 .nav {
@@ -43,7 +42,20 @@ body, html {
   }
 
   .nav-item {
-      margin: 10px 0;
+      margin: 5px 0;
+  }
+
+  .nav-item a {
+      text-decoration: none;
+      color: #000;
+  }
+
+  .hydrovisio-text {
+      margin-left: 0;
+  }
+
+  .social-links {
+    margin-top: 10px;
   }
 }
 

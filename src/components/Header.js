@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -7,7 +8,7 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="container d-flex justify-content-between align-items-center">
+        <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
           <div className="logo-container d-flex align-items-center">
             <img src="/ofidohubreslogo.png" alt="Logo" className="logo" />
             <span className="hydrovisio-text">hydrovisio</span>
@@ -33,7 +34,7 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <div className="social-links">
+          <div className="social-links d-flex">
             <a
               href="https://www.linkedin.com/company/ofido-hub/"
               target="_blank"
@@ -51,7 +52,6 @@ const Header = () => {
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
           </div>
-
           <ul className="nav">
             <li className="nav-item">
               <a
