@@ -1,6 +1,9 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -54,20 +57,20 @@ const Header = () => {
           </div>
           <ul className="nav">
             <li className="nav-item">
-              <a
-                href="#"
+              <Link
+                to="/signin"
                 className="nav-link link-body-emphasis px-2 login-link"
               >
                 Login
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                href="#"
+              <Link
+                to="/signup"
                 className="nav-link link-body-emphasis px-2 signup-link"
               >
                 Sign up
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
