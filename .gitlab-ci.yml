@@ -15,25 +15,40 @@ test_frontend:
   stage: test
   image: node:latest
   script:
-    - cd react/app
+    - cd frontend
     - npm install
     - npm test
 
-build:
+# Build backend
+build_backend:
   stage: build
   image: node:latest
   script:
-    - cd react/app
+    - cd bcend
     - npm install
     - npm run build
   artifacts:
     paths:
-      - react/app/build
+      - bcend/dist
+
+build_frontend:
+  stage: build
+  image: node:latest
+  script:
+    - cd frontend
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - frontend/dist
 
 deploy:
   stage: deploy
+  image: alpine:latest
   script:
     - echo "Deploying application..."
-    # will be implemented later
+    # Add your deployment commands here
+    # For example, you might use scp to copy files to a server
+    # or use a deployment tool like Ansible, Kubernetes, etc.
   only:
     - main
