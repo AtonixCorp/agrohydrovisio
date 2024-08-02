@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2e87948f.css",
+    "main.js": "/static/js/main.1cbb6e6e.js",
+    "static/js/845.13352ac5.chunk.js": "/static/js/845.13352ac5.chunk.js",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/headerbackground.png": "/static/media/headerbackground.ce08c142cee31ef0fdc4.png",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/herosection.png": "/static/media/herosection.529b657b975660d41d7b.png",
+    "static/media/herosectionbackgroundh1.png": "/static/media/herosectionbackgroundh1.57afad19f5e35ad1c335.png",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/index.html",
+    "main.2e87948f.css.map": "/static/css/main.2e87948f.css.map",
+    "main.1cbb6e6e.js.map": "/static/js/main.1cbb6e6e.js.map",
+    "845.13352ac5.chunk.js.map": "/static/js/845.13352ac5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e87948f.css",
+    "static/js/main.1cbb6e6e.js"
+  ]
+}
