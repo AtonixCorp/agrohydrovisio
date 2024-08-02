@@ -11,7 +11,7 @@ const HeroSection = () => {
           <span className="color2">y</span>
           <span className="color3">d</span>
           <span className="color4">r</span>
-          <span className="color5">0 </span>
+          <span className="color5">0</span>
           <span className="color6">v</span>
           <span className="color7">i</span>
           <span className="color8">s</span>

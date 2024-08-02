@@ -7,7 +7,7 @@
 .main-content {
   margin-left: 0px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 0.5fr 3fr 0.5fr;
   height: 20%;
 }
 
