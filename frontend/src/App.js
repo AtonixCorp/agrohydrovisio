@@ -24,13 +24,13 @@ function App() {
 function AppContent() {
   return (
     <div className="App">
+      <NavBar />
       <CustomHeader />
 
       <ThemeToggle />
 
       <div className="container">
         <Suspense fallback={<div>Loading...</div>}>
-          <NavBar />
           <HeroSection />
 
           <MainContent />

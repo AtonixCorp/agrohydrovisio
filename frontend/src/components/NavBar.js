@@ -1,22 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faLinkedin,
-  faGithub,
-  faTwitter,
-  faGitlab,
-} from '@fortawesome/free-brands-svg-icons';
+
 import './NavBar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import SignUp from '../account/SignUp';
+import SignIn from '../account/SignIn';
 
 const NavBar = () => {
   return (
     <nav
-      className="navbar navbar-expand-xxl navbar-dark bg-dark p-1 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3 w-100"
+      className="navbar navbar-expand-xxl navbar-dark bg-black text-white p-1 border border-primary-subtle rounded-3 w-100"
       aria-label="Seventh navbar example"
     >
       <div className="container-fluid">
@@ -64,81 +60,139 @@ const NavBar = () => {
                   'Science',
                 ].map((item) => (
                   <li key={item}>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item small" href="#">
                       {item}
                     </a>
                   </li>
                 ))}
               </ul>
             </li>
-          </ul>
-
-          <ul className="nav flex-grow-1 justify-content-center">
             <li className="nav-item">
+              <Link className="nav-link text-white" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item dropdown">
               <Link
-                to="/"
-                className="nav-link link-light px-2 active"
-                aria-label="Home"
+                className="nav-link text-white dropdown-toggle"
+                to="/projects"
+                id="projectsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
                 Projects
               </Link>
+              <ul className="dropdown-menu" aria-labelledby="projectsDropdown">
+                {[
+                  'IoT Solutions',
+                  'Agriculture Technology',
+                  'Oil Technology Research',
+                  'AI and Machine Learning',
+                  'Media and Entertainment Technology',
+                ].map((item) => (
+                  <li key={item}>
+                    <a className="dropdown-item small" href="#">
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </li>
             <li className="nav-item">
-              <Link to="/community" className="nav-link link-light px-2">
+              <Link className="nav-link text-white" to="/community">
                 Community
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/research" className="nav-link link-light px-2">
+              <Link className="nav-link text-white" to="/research">
                 Research
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/register">
+                Blog
+              </Link>
+            </li>
           </ul>
-          <form role="search">
+          <form role="search" className="d-flex me-3">
             <input
-              className="form-control"
+              className="form-control form-control-sm me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
           </form>
-          <div className="social-links d-flex">
-            <a
-              href="https://www.linkedin.com/company/ofido-hub/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ margin: '0 10px', color: '#0e76a8' }}
-              aria-label="LinkedIn"
+
+          <div className="d-flex align-items-center">
+            <button
+              className="btn btn-primary btn-sm me-2"
+              data-bs-toggle="modal"
+              data-bs-target="#signInModal"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
-            </a>
-            <a
-              href="https://github.com/ofidohub"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ margin: '0 5px', color: '#333' }}
-              aria-label="GitHub"
+              Sign In
+            </button>
+            <button
+              className="btn btn-primary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#signUpModal"
             >
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
-            <a
-              href="https://x.com/ofidohub"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ margin: '0 5px', color: '#1DA1F2' }}
-              aria-label="Twitter"
-            >
-              <FontAwesomeIcon icon={faTwitter} size="2x" />
-            </a>
-            <a
-              href="https://gitlab.com/ofidohubvm"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ margin: '0 5px', color: '#FC6D26' }}
-              aria-label="GitLab"
-            >
-              <FontAwesomeIcon icon={faGitlab} size="2x" />
-            </a>
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="modal fade"
+        id="signInModal"
+        tabIndex="-1"
+        aria-labelledby="signInModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="signInModalLabel">
+                Sign In
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              <SignIn />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="modal fade"
+        id="signUpModal"
+        tabIndex="-1"
+        aria-labelledby="signUpModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="signUpModalLabel">
+                Sign Up
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              <SignUp />
+            </div>
           </div>
         </div>
       </div>

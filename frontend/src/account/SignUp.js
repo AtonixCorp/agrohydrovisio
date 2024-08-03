@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -89,7 +89,7 @@ const SignUp = () => {
                 </button>
               </form>
               <p className="mt-3 text-center">
-                Already have an account? <a href="/login">Login here</a>.
+                Already have an account? <Link to="/login">Login here</Link>.
               </p>
             </div>
           </div>
