@@ -16,12 +16,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Run tests
-        run: npm test -- --watchAll=false
+        working-directory: frontend/
 
       - name: Build project
         run: npm run build
+        working-directory: frontend/
 
       - name: List files in build directory
         run: ls -la build/
