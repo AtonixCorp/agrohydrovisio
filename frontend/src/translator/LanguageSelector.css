@@ -1,0 +1,33 @@
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+  
+  body {
+    top: 0px !important;
+  }
+  
+  #google_translate_element .goog-te-gadget-simple {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  #google_translate_element .goog-te-gadget-simple .goog-te-menu-value span {
+    color: #ffffff;
+  }
+  
+  .goog-te-menu-frame {
+    background-color: #000000 !important;
+    border: 1px solid #ffffff !important;
+  }
+  
+  .goog-te-menu2-item div, .goog-te-menu2-item-selected div {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+  }
+  
+  .goog-te-menu2-item div:hover {
+    background-color: #333333 !important;
+  }

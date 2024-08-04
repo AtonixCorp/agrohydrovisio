@@ -8,11 +8,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import SignUp from '../account/SignUp';
 import SignIn from '../account/SignIn';
+import LanguageSelector from '../translator/LanguageSelector'; // Corrected import path
 
 const NavBar = () => {
   return (
     <nav
-      className="navbar navbar-expand-xxl navbar-dark bg-black text-white p-1 border border-primary-subtle rounded-3 w-100"
+      className="navbar navbar-expand-xxl navbar-dark navbar-custom text-white p-1 border border-primary-subtle rounded-3 w-100"
       aria-label="Seventh navbar example"
     >
       <div className="container-fluid">
@@ -126,19 +127,21 @@ const NavBar = () => {
 
           <div className="d-flex align-items-center">
             <button
-              className="btn btn-primary btn-sm me-2"
+              className="btn btn-primary btn-sm btn-signin me-2"
               data-bs-toggle="modal"
               data-bs-target="#signInModal"
             >
               Sign In
             </button>
+            <div className="vertical-line"></div>
             <button
-              className="btn btn-primary btn-sm"
+              className="btn btn-primary btn-sm btn-signup"
               data-bs-toggle="modal"
               data-bs-target="#signUpModal"
             >
               Sign Up
             </button>
+            <LanguageSelector />
           </div>
         </div>
       </div>

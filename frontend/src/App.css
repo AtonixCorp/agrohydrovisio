@@ -1,14 +1,31 @@
-/* App.css */
-.container {
+/* Ensure the html and body elements cover 100% height and width */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Ensure the root container covers 100% height and width */
+#root {
+  height: 100%;
+
   display: flex;
   flex-direction: column;
 }
 
+/* Ensure the main content area grows to fill available space */
 .main-content {
+  flex: 1;
   margin-left: 0px;
   display: grid;
   grid-template-columns: 0.5fr 3fr 0.5fr;
   height: 20%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .part {
@@ -27,3 +44,4 @@
 .part3 {
   background-color: #000;
 }
+
