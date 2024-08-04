@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [main]
+    branches: [master, main]
   pull_request:
-    branches: [main]
+    branches: [master, main]
 
 jobs:
   build:
@@ -20,7 +20,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd bcend && npm install
-      - run: cd bcend && npm test
-      - run: cd react/app && npm install
-      - run: cd react/app && npm test
+      - run: npm install
+      - run: npm build

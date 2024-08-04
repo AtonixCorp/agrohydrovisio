@@ -3,14 +3,6 @@ stages:
   - build
   - deploy
 
-test_backend:
-  stage: test
-  image: node:latest
-  script:
-    - cd bcend
-    - npm install
-    - npm test
-
 test_frontend:
   stage: test
   image: node:latest
@@ -18,18 +10,6 @@ test_frontend:
     - cd frontend
     - npm install
     - npm test
-
-# Build backend
-build_backend:
-  stage: build
-  image: node:latest
-  script:
-    - cd bcend
-    - npm install
-    - npm run build
-  artifacts:
-    paths:
-      - bcend/dist
 
 build_frontend:
   stage: build

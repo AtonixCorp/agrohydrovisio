@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './SignUp.css';
 
 const SignUp = () => {
   const [username, setUsername] = useState('');
@@ -18,16 +19,13 @@ const SignUp = () => {
     const mockApiResponse = await mockSignUpApi(username, email, password);
 
     if (mockApiResponse.success) {
-      // If sign-up is successful, navigate to Login
-      navigate('/login');
+      navigate('/login'); // Navigate to Login if successful
     } else {
-      // Handle sign-up error
-      setError(mockApiResponse.message);
+      setError(mockApiResponse.message); // Set error message
     }
   };
 
   const mockSignUpApi = (username, email, password) => {
-    // Mock API response
     return new Promise((resolve) => {
       setTimeout(() => {
         if (username && email && password) {
@@ -43,9 +41,9 @@ const SignUp = () => {
     <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
-          <div className="card">
+          <div className="card shadow-lg">
             <div className="card-body">
-              <h1 className="card-title text-center">SignUp</h1>
+              <h1 className="card-title text-center">Sign Up</h1>
               {error && <div className="alert alert-danger">{error}</div>}
               <form onSubmit={handleSignUp} className="auth-form">
                 <div className="form-group">
@@ -85,7 +83,7 @@ const SignUp = () => {
                   />
                 </div>
                 <button type="submit" className="btn btn-primary btn-block">
-                  SignUp
+                  Sign Up
                 </button>
               </form>
               <p className="mt-3 text-center">

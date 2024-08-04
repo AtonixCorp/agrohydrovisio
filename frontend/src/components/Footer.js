@@ -12,226 +12,207 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="footer-container">
       <footer className="footer py-5">
         <div className="row justify-content-between">
           <div className="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+            <h5>Home</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">
-                  Home
-                </a>
+                <Link
+                  to="/about-us"
+                  className="nav-link p-0 text-body-secondary"
+                >
+                  About Us
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">
-                  Features
-                </a>
+                <Link
+                  to="/contact-us"
+                  className="nav-link p-0 text-body-secondary"
+                >
+                  Contact Us
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">
-                  Pricing
-                </a>
+                <Link
+                  to="/community"
+                  className="nav-link p-0 text-body-secondary"
+                >
+                  Community
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">
+                <Link to="/faqs" className="nav-link p-0 text-body-secondary">
                   FAQs
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-body-secondary">
-                  About
-                </a>
+                <Link
+                  to="/services"
+                  className="nav-link p-0 text-body-secondary"
+                >
+                  Services
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="col-6 col-md-2 mb-3">
-            <h5>Navigation</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a
-                  href="index.html"
-                  className="nav-link p-0 text-body-secondary"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a
-                  href="about.html"
-                  className="nav-link p-0 text-body-secondary"
-                >
-                  About Us
-                </a>
-              </li>
-              <li className="nav-item mb-2">
-                <a
-                  href="services.html"
+                <h5>Company</h5>
+                <Link
+                  to="/services"
                   className="nav-link p-0 text-body-secondary"
                 >
                   Services
-                </a>
-                <ul className="nav flex-column ms-3">
-                  <li className="nav-item mb-2">
-                    <a
-                      href="iot.html"
-                      className="nav-link p-0 text-body-secondary"
-                    >
-                      IoT Solutions
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a
-                      href="agriculture.html"
-                      className="nav-link p-0 text-body-secondary"
-                    >
-                      Agriculture Technology
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a
-                      href="oil.html"
-                      className="nav-link p-0 text-body-secondary"
-                    >
-                      Oil Technology Research
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a
-                      href="ai.html"
-                      className="nav-link p-0 text-body-secondary"
-                    >
-                      AI and Machine Learning
-                    </a>
-                  </li>
-                  <li className="nav-item mb-2">
-                    <a
-                      href="media.html"
-                      className="nav-link p-0 text-body-secondary"
-                    >
-                      Media and Entertainment Technology
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li className="nav-item mb-2">
-                <a
-                  href="solutions.html"
+                </Link>
+                <Link
+                  to="/solutions"
                   className="nav-link p-0 text-body-secondary"
                 >
                   Solutions
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a
-                  href="blog.html"
+                <Link
+                  to="/about-us"
                   className="nav-link p-0 text-body-secondary"
                 >
-                  Blog/News
-                </a>
+                  About Us
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a
-                  href="careers.html"
+                <Link
+                  to="/careers"
                   className="nav-link p-0 text-body-secondary"
                 >
                   Careers
-                </a>
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <a
-                  href="contact.html"
+                <Link
+                  to="/contact-us"
                   className="nav-link p-0 text-body-secondary"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          <div className="col-md-5 mb-3">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what&apos;s new and exciting from us.</p>
-              <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label htmlFor="newsletter1" className="visually-hidden">
-                  Email address
-                </label>
-                <input
-                  id="newsletter1"
-                  type="text"
-                  className="form-control"
-                  placeholder="Email address"
-                />
-                <button className="btn btn-primary" type="button">
-                  Subscribe
-                </button>
+          <div className="col-6 col-md-2 mb-3">
+            <ul className="nav flex-column">
+              <li className="nav-item mb-2">
+                <h5>Blog/News</h5>
+                <Link to="/nvidia" className="nav-link p-0 text-body-secondary">
+                  Nvidia
+                </Link>
+                <Link to="/ubuntu" className="nav-link p-0 text-body-secondary">
+                  Ubuntu
+                </Link>
+              </li>
+              <li className="nav-item mb-2">
+                <Link
+                  to="/hackernews"
+                  className="nav-link p-0 text-body-secondary"
+                >
+                  Hackernews
+                </Link>
+              </li>
+              <li className="nav-item mb-2">
+                <Link to="/spacex" className="nav-link p-0 text-body-secondary">
+                  SpaceX
+                </Link>
+              </li>
+              <li className="nav-item mb-2">
+                <Link to="/nasa" className="nav-link p-0 text-body-secondary">
+                  Nasa
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-md-6 mb-3">
+            <form className="d-flex flex-column flex-sm-row align-items-center">
+              <div className="me-3">
+                <h5>Subscribe to our newsletter</h5>
+                <div className="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label htmlFor="newsletter1" className="visually-hidden">
+                    Email address
+                  </label>
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    className="form-control"
+                    placeholder="Email address"
+                  />
+                  <button className="btn btn-primary" type="button">
+                    Subscribe
+                  </button>
+                </div>
               </div>
+              <ul className="list-unstyled d-flex mb-0">
+                <li className="ms-3">
+                  <a
+                    href="https://www.linkedin.com/company/ofido-hub/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      size="1x"
+                      className="fa-icon"
+                    />
+                  </a>
+                </li>
+                <li className="ms-3">
+                  <a
+                    href="https://github.com/ofidohub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      size="1x"
+                      className="fa-icon"
+                    />
+                  </a>
+                </li>
+                <li className="ms-3">
+                  <a
+                    href="https://x.com/ofidohub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter"
+                  >
+                    <FontAwesomeIcon
+                      icon={faTwitter}
+                      size="1x"
+                      className="fa-icon"
+                    />
+                  </a>
+                </li>
+                <li className="ms-3">
+                  <a
+                    href="https://gitlab.com/ofidohubvm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitLab"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGitlab}
+                      size="1x"
+                      className="fa-icon"
+                    />
+                  </a>
+                </li>
+              </ul>
             </form>
           </div>
-          <ul className="list-unstyled d-flex">
-            <li className="ms-3">
-              <a
-                href="https://www.linkedin.com/company/ofido-hub/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ margin: '0 10px', color: '#0e76a8' }}
-                aria-label="LinkedIn"
-              >
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  size="1x"
-                  className="fa-icon"
-                />
-              </a>
-            </li>
-            <li className="ms-3">
-              <a
-                href="https://github.com/ofidohub"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ margin: '0 5px', color: '#333' }}
-                aria-label="GitHub"
-              >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  size="1x"
-                  className="fa-icon"
-                />
-              </a>
-            </li>
-            <li className="ms-3">
-              <a
-                href="https://x.com/ofidohub"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ margin: '0 5px', color: '#1DA1F2' }}
-                aria-label="Twitter"
-              >
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  size="1x"
-                  className="fa-icon"
-                />
-              </a>
-            </li>
-            <li className="ms-3">
-              <a
-                href="https://gitlab.com/ofidohubvm"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ margin: '0 5px', color: '#FC6D26' }}
-                aria-label="GitLab"
-              >
-                <FontAwesomeIcon
-                  icon={faGitlab}
-                  size="1x"
-                  className="fa-icon"
-                />
-              </a>
-            </li>
-          </ul>
 
           <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>&copy; 2024 Company, Inc. All rights reserved.</p>
