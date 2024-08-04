@@ -9,12 +9,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 20.x]
+        node-version: [14.x, 16.x]
       fail-fast: false
-
     steps:
       - uses: actions/checkout@v4
 
@@ -40,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: webpack-artifacts
-          path: frontend/dist/
+          path: frontend/src/dist/
