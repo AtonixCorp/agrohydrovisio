@@ -26,12 +26,18 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: frontend/src
 
       - name: Build
         run: npm run build
+        working-directory: frontend/src
+
+      - name: List files in dist directory
+        run: ls -la dist/
+        working-directory: frontend/src
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
           name: webpack-artifacts
-          path: dist/
+          path: frontend/dist/
