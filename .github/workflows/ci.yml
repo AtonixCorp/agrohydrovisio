@@ -23,4 +23,5 @@ jobs:
         working-directory: frontend/
 
       - name: List files in build directory
-        run: ls -la build/
+        run: ls -la
+        working-directory: frontend/build
