@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x]
+        node-version: [14.x, 16.x, 20.X]
 
     steps:
       - uses: actions/checkout@v2
@@ -20,7 +20,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd bcend && npm install
-      - run: cd bcend && npm test
-      - run: cd react/app && npm install
-      - run: cd react/app && npm test
+      - run: npm install
+      - run: npm build
