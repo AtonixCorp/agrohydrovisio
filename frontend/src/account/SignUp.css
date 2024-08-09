@@ -1,28 +1,28 @@
 body {
-    background-color: #f8f9fa;
-  }
-  
-  .card {
-    border-radius: 10px;
-  }
-  
-  .card-title {
-    color: #333;
-  }
-  
-  .auth-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .btn-primary {
-    background-color: #333;
-    border: none;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
-  .alert {
-    margin-bottom: 20px;
-  }
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-title {
+  color: #333;
+}
+
+.auth-form .form-group {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #333;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.alert {
+  margin-bottom: 20px;
+}

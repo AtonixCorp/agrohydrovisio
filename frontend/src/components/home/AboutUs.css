@@ -1,68 +1,70 @@
 /* General styles for the modal */
 .modal-content {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .modal-header {
-    border-bottom: none;
-  }
-  
-  .modal-title {
-    color: #0d9494;
-    font-weight: bold;
-  }
-  
-  .close {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .modal-body {
-    padding: 20px;
-  }
-  
-  .modal-body p {
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-  
-  /* Styles for the social icons */
-  .list-unstyled {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    list-style: none;
-    margin-top: 20px;
-  }
-  
-  .list-unstyled li {
-    margin: 0 10px;
-  }
-  
-  .fa-icon {
-    color: #0d9494;
-    transition: transform 0.3s, color 0.3s;
-  }
-  
-  .fa-icon:hover {
-    transform: scale(1.2);
-    color: #007bff;
-  }
-  
-  /* Button styles */
-  .btn-primary {
-    background-color: #0d9494;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0b7a7a;
-  }
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  color: #0d9494;
+  font-weight: bold;
+}
+
+.close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Styles for the social icons */
+.list-unstyled {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.list-unstyled li {
+  margin: 0 10px;
+}
+
+.fa-icon {
+  color: #0d9494;
+  transition:
+    transform 0.3s,
+    color 0.3s;
+}
+
+.fa-icon:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #0d9494;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #0b7a7a;
+}

@@ -65,16 +65,18 @@
 
 .vertical-line {
   border-left: 1px solid white;
-  height: 24px; 
-  margin: 0 10px; 
+  height: 24px;
+  margin: 0 10px;
 }
 
 /* New styles for Sign In and Sign Up buttons */
-.btn-signin, .btn-signup {
+.btn-signin,
+.btn-signup {
   position: relative;
 }
 
-.btn-signin::after, .btn-signup::after {
+.btn-signin::after,
+.btn-signup::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -86,6 +88,7 @@
   transition: opacity 0.2s ease;
 }
 
-.btn-signin:hover::after, .btn-signup:hover::after {
+.btn-signin:hover::after,
+.btn-signup:hover::after {
   opacity: 1;
 }
